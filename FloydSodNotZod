@@ -246,7 +246,7 @@ public class FloydMainClass
 			System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
 			System.out.printf("%-20s%-15s\n", "User", borrowedUserName);
 			System.out.printf("%-20s%-5s%-4.2f\n", "Subtotal", "$", borrowedSubTotal); 
-			System.out.printf("%-20s%-7s%-4.2f\n", "Tax", "$", borrowedTax);
+			System.out.printf("%-20s%-6s%-4.2f\n", "Tax", "$", borrowedTax);
 			System.out.printf("%-20s%-5s%-4.2f\n", "Total Cost", "$", borrowedTotalCost);
 			System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
 			
@@ -261,16 +261,16 @@ public class FloydMainClass
 		System.out.println("FINAL REPORT");
 		System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
 		System.out.println("Count of discount types");
-		System.out.printf("%-20s%11s\n", DISCOUNT_NAME_MEMBER,"Count", borrowedMemberCount);
-		System.out.printf("%-20s%11s\n", DISCOUNT_NAME_SENIOR,"Count", borrowedSeniorCount);
-		System.out.printf("%-20s%11s\n", DISCOUNT_NAME_NONE, "Count", borrowedNoDiscountCount);
+		System.out.printf("%1s%1s%18s\n",DISCOUNT_NAME_MEMBER," Count", borrowedMemberCount);
+		System.out.printf("%1s%1s%18s\n", DISCOUNT_NAME_SENIOR," Count", borrowedSeniorCount);
+		System.out.printf("%1s%1s%13s\n", DISCOUNT_NAME_NONE, " Count", borrowedNoDiscountCount);
 		System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
 		System.out.println("Count of item types");
-		System.out.printf("%-20s%11s\n", ITEM_NAME_PREMIUM, "Count", borrowedPremiumCount);
-		System.out.printf("%-20s%11s\n", ITEM_NAME_SPECIAL, "Count", borrowedSpecialCount);
-		System.out.printf("%-20s%11s\n", ITEM_NAME_BASIC, "Count", borrowedBasicCount);
+		System.out.printf("%1s%1s%17s\n", ITEM_NAME_PREMIUM, " Count", borrowedPremiumCount);
+		System.out.printf("%1s%1s%17s\n", ITEM_NAME_SPECIAL, " Count", borrowedSpecialCount);
+		System.out.printf("%1s%1s%19s\n", ITEM_NAME_BASIC, " Count", borrowedBasicCount);
 		System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
-		System.out.printf("%-20s%-5s%-4.2f\n", "Grand Total", "$", borrowedGrandTotal);
+		System.out.printf("%-20s%-4s%-4.2f\n", "Grand Total", "$", borrowedGrandTotal);
 		System.out.println("~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~ ~~~~");
 		
 	}//END OF void method to display the final report
